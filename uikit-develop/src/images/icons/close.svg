@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.799" height="19.799" viewBox="0 0 19.799 19.799">
+    <defs>
+        <style>
+            .icon-close{fill:none;stroke:#b2b4b2;stroke-linecap:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_275" transform="rotate(45 399.24 -303.2)">
+        <path id="Path_674" d="M-748 462v25" class="icon-close" transform="translate(1093.329 -281)"/>
+        <path id="Path_675" d="M0 0v25" class="icon-close" transform="rotate(90 82.164 275.665)"/>
+    </g>
+</svg>

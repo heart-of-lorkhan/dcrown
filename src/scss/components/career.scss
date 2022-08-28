@@ -1,0 +1,139 @@
+.career {
+  padding-top: 30px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include tablet-large {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    padding-top: 30px;
+    margin-top: 0;
+  }
+}
+
+.career__inner {
+  text-align: center;
+  margin: -30px auto;
+
+  @include tablet {
+    position: relative;
+    margin-bottom: 128px;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin: -10px auto;
+    padding: 0;
+  }
+
+  @include desktop {
+    padding: 0 20px;
+  }
+}
+
+.career__features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  flex-direction: column;
+
+  @include tablet {
+    max-width: 960px;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  @include tablet-large {
+    margin-bottom: 100px;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+  }
+}
+
+.career__features li {
+  @include tablet {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include tablet-large {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  @include desktop {
+    margin-right: 76px;
+    margin-left: 76px;
+  }
+}
+
+.career__inner h2 {
+  font-family: $font-title;
+  color: $secondary-color;
+  font-size: 50px;
+  line-height: 70px;
+  margin: 0 auto 32px;
+
+  @include tablet {
+    font-size: 50px;
+    line-height: 84px;
+    margin: 0 auto 24px;
+  }
+
+  @include tablet-large {
+    margin: 0 auto 50px;
+  }
+}
+
+.career__inner li {
+  font-size: 30px;
+  color: $secondary-color;
+  font-size: 31px;
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include tablet-large {
+    font-size: 28px;
+  }
+
+  @include desktop {
+    font-size: 31px;
+  }
+}
+
+.career__inner li:last-child {
+  margin-bottom: 34px;
+}
+
+.career__inner .arrow {
+  display: none;
+
+  @include tablet-large {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    transition-duration: $transition-duration;
+  }
+
+  @include desktop {
+    top: -55px;
+    left: -11px;
+  }
+
+  &:hover {
+    transform: translateX(25%) translateY(15%);
+    transition-duration: $transition-duration;
+  }
+}

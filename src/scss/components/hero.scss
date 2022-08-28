@@ -1,0 +1,208 @@
+.hero__inner {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(100% - 5px);
+    background-color: rgba(0, 0, 0, 0.14);
+  }
+
+  @include tablet {
+    min-height: 923px;
+  }
+
+  @include tablet-large {
+    min-height: 768px;
+  }
+
+  @include desktop {
+    min-height: auto;
+  }
+}
+
+.hero__text {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0px 30px;
+  text-align: center;
+
+  @include tablet {
+    top: 0;
+    height: 100%;
+  }
+
+  @include desktop {
+    top: -85px;
+  }
+}
+
+.hero__text .hero__logo {
+  width: 35px;
+  margin-bottom: 15px;
+  height: 21px;
+
+  @include tablet {
+    width: 51px;
+    margin-bottom: 22px;
+    height: 31px;
+  }
+}
+
+.hero__title {
+  color: $text-color-white;
+  font-family: $font-family;
+  letter-spacing: 1.6px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+
+  @include tablet {
+    font-size: 19px;
+  }
+
+  @include desktop {
+    letter-spacing: 2.2px;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
+
+.hero__subtitle {
+  color: $text-color-white;
+  font-size: 72px;
+  line-height: 1.3;
+  margin-bottom: 0;
+
+  @include tablet {
+    font-size: 101px;
+    max-width: 400px;
+  }
+
+  @include desktop {
+    font-size: 112px;
+    max-width: 100%;
+  }
+}
+
+.hero__info {
+  z-index: 1;
+  min-height: 479px;
+  background-color: $background-default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+  text-align: center;
+  padding-left: 26px;
+  padding-right: 26px;
+  position: relative;
+  top: -40px;
+
+  @include tablet {
+    top: -85px;
+    max-width: 1115px;
+    min-height: 328px;
+    padding: 42px 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: -35px;
+  }
+
+  @include tablet-large {
+    top: -60px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    top: -100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.hero__info h2 {
+  color: $secondary-color;
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 1.22;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.hero__info p {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.hero__info .arrow {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    width: 62px;
+    height: 77px;
+    right: 80px;
+    bottom: 30px;
+    transition-duration: $transition-duration;
+  }
+  &:hover {
+    transform: translateX(-25%) translateY(15%);
+    transition-duration: $transition-duration;
+  }
+}
+
+.hero__video {
+  z-index: 1;
+  position: relative;
+
+  @include tablet {
+    height: 80vh;
+  }
+
+  @include tablet-large {
+    height: 100%;
+  }
+}
+
+.hero__video-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 5px);
+  object-fit: cover;
+}

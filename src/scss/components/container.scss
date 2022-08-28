@@ -1,0 +1,13 @@
+.container {
+  max-width: 1760px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 22px;
+  padding-left: 22px;
+
+  @include laptop {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}

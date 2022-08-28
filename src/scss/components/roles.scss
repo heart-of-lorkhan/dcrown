@@ -1,0 +1,134 @@
+.roles {
+  padding-top: 40px;
+  padding-bottom: 0;
+
+  h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: $secondary-color;
+
+    @include tablet-large {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  @include tablet-large {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include laptop {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+}
+
+.roles__buttons,
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+
+    &.uk-active {
+      > a {
+        background-color: $secondary-color;
+        transition-property: background-color;
+        transition-duration: $transition-duration;
+      }
+    }
+
+    > a {
+      display: block;
+      width: 13px;
+      height: 13px;
+      border: 1px solid $secondary-color;
+      border-radius: 50%;
+      transition-property: background-color;
+      transition-duration: $transition-duration;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.roles__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 1070px;
+  width: auto;
+  margin-right: -22px;
+  margin-left: -22px;
+
+  @include tablet-large {
+    flex-direction: column-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
+
+.roles__list {
+  margin-bottom: 32px;
+  overflow-x: auto;
+  padding: 20px;
+  padding-bottom: 20px;
+  display: none !important;
+
+  @include tablet-large {
+    display: flex !important;
+    overflow: hidden;
+  }
+
+  li {
+    margin-right: 6px;
+    margin-left: 6px;
+
+    @include tablet {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.roles__buttons {
+  display: none;
+
+  @include tablet-large {
+    display: flex;
+  }
+}
+
+.roles__slider {
+  padding-bottom: 40px;
+
+  .uk-slider-items > * + * {
+    margin-left: 20px;
+  }
+
+  .card {
+    max-width: 320px;
+
+    @include tablet {
+      max-width: 360px;
+    }
+  }
+
+  @include tablet-large {
+    display: none;
+  }
+}

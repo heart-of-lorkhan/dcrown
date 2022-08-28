@@ -1,0 +1,87 @@
+.button {
+  background-color: $button-color;
+  font-weight: 700;
+  font-family: $font-family;
+  color: $text-color-white;
+  min-width: 236px;
+  height: 57px;
+  text-transform: uppercase;
+  border: 1px solid $button-color;
+  transition-duration: $transition-duration;
+
+  &.button-inverse {
+    &:focus,
+    &:hover,
+    &:active {
+      border-color: $text-color-white;
+      color: $text-color-white;
+    }
+  }
+
+  @include tablet {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid $button-color;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    min-width: 236px;
+    height: 57px;
+    box-shadow: none;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: $button-color;
+    transition-duration: $transition-duration;
+    cursor: pointer;
+  }
+}
+
+.button-apply-header {
+  width: 100%;
+  position: fixed;
+  font-size: 21px;
+  bottom: 0;
+  height: 84px;
+  z-index: 10;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  @include tablet-large {
+    position: static;
+    width: 236px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    min-width: 236px;
+    height: 57px;
+    box-shadow: none;
+    letter-spacing: 0;
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $background-default;
+
+    @include tablet-large {
+      background-color: transparent !important;
+    }
+  }
+
+  &.no-focus {
+    background-color: $button-color;
+    color: $text-color-white;
+  }
+}

@@ -1,0 +1,52 @@
+footer.footer
+  .form#form
+    .container
+      .offers-recipe(data-scrollspy="animate__fadeInUp")
+        h2.offers-recipe__title If you have the passion, we have the recipe
+        span.offers-recipe__span Serving up exciting possibilities, make your future bright and 
+          b apply now.
+        span.recipe-mobile If you’re looking for a highly skilled profession with excellent long-term career benefits, then don’t hesitate – <b>apply now</b>.
+        img.recipe__arrow(src="images/green-arrow-vertical-right.svg", alt="arrow")
+      form(action="" method="post" data-scrollspy="animate__fadeInUp").form__inner
+        .select
+          select#role-select(name="role")
+            option(disabled selected) What type of role would you like to apply for?
+            option(value="trainee-butcher") Trainee Butcher
+            option(value="production-operative") Production Operative
+            option(value="any") I don't mind
+          img.select__arrow(src="images/select-arrow.svg" alt="select arrow")
+        .form__row
+          .form__input
+            label(for="first-name") FIRST NAME* 
+              input(type="text" id="first-name" name="first-name" required).input
+          .form__input
+            label(for="last-name") LAST NAME*
+              input(type="text" id="last-name" name="last-name" required).input
+          .form__input
+            label(for="email-adress") EMAIL ADDRESS*
+              input(type="email" id="email-adress" name="email" required).input
+          .form__input
+            label(for="phone-number") MOBILE (optional)
+              input(type="tel" id="phone-number" name="email").input
+        .form__cv 
+          label(for="upload").label-upload
+            span.bold
+              span
+                b UPLOAD CV 
+              span.twinkle-star * 
+              span.twinkle-label 
+                b (this is optional)
+            span.attach Attach your CV by dropping it here or selecting one.
+          input(type="file" name="cv").input-upload#upload
+        .form__checkbox
+          label.checkbox.option
+            input.checkbox__input#checkbox(type='checkbox')
+            span.checkbox__box
+            div I ACKNOWLEDGE AND GIVE PERMISSION FOR MY DATA TO BE HELD BY DANISH CROWN IN ACCORDANCE WITH <a href="" target="_blank" rel="noopener noreferrer">THE GENERAL DATA PROTECTION REGULATION</a>.
+        .form__submit
+          button(type="submit").button.button-apply.button-inverse Apply now
+    .container
+      .footer__inner
+        img(src="images/logo-white.svg" alt="danish crown logo" width="184" height="66").footer__logo
+    .footer__copyright
+      span.copyright &#169 WeLove9am 2021

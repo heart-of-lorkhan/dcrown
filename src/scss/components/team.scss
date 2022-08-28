@@ -1,0 +1,138 @@
+.team__arrow {
+  display: none;
+
+  @include laptop {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    transition-duration: $transition-duration;
+  }
+
+  @include desktop {
+    left: 40px;
+  }
+
+  &:hover {
+    transform: translateY(15%);
+    transition-duration: $transition-duration;
+  }
+}
+
+.team__text {
+  background-color: $secondary-color;
+  color: $text-color-white;
+  text-align: center;
+  max-width: none;
+  margin-right: -22px;
+  margin-left: -22px;
+  padding: 30px;
+  max-width: 1000px;
+  width: auto;
+
+  @include tablet {
+    margin-right: -22px;
+    margin-left: -22px;
+    width: auto;
+    padding: 20px 50px 55px 50px;
+  }
+
+  @include tablet-large {
+    max-width: none;
+    margin-left: -22px;
+    padding: 80px 143px 75px 100px;
+  }
+
+  @include desktop {
+    width: 950px;
+    padding: 159px 181px 131px 127px;
+  }
+}
+
+.team__inner {
+  display: flex;
+
+  flex-direction: column-reverse;
+  margin-bottom: 0;
+
+  @include tablet-large {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+}
+
+.team__img {
+  max-width: none;
+  margin-right: -22px;
+  margin-left: -22px;
+  width: auto;
+  height: 380px;
+  object-fit: cover;
+
+  @include tablet {
+    margin-right: -22px;
+    margin-left: -22px;
+    z-index: 1;
+    width: auto;
+  }
+
+  @include tablet-large {
+    max-width: none;
+    margin-right: -22px;
+    margin-left: -50px;
+    width: 46%;
+    height: 493px;
+  }
+
+  @include desktop-l {
+    width: 828px;
+    height: 555px;
+    margin-left: -112px;
+  }
+}
+
+.team__title {
+  font-size: 45px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  font-family: $font-title;
+
+  @include tablet {
+    font-size: 45px;
+    line-height: 84px;
+    margin-bottom: 24px;
+  }
+
+  @include tablet-large {
+    font-size: 46px;
+    padding: 0 60px;
+    line-height: 50px;
+  }
+}
+
+.team__text p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family;
+  margin-bottom: 32px;
+  max-width: 666px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 35px;
+  }
+
+  @include tablet-large {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

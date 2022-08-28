@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.377" height="24.687" viewBox="0 0 22.377 24.687">
+    <defs>
+        <style>
+            .icon-login{fill:none;stroke:#b2b4b2;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_391" transform="translate(-313.25 -278.385)">
+        <path id="Path_690" d="M65.286 45.645a10.439 10.439 0 0 0-20.877 0v1.765h20.877z" class="icon-login" transform="translate(269.591 254.913)"/>
+        <circle id="Ellipse_20" cx="5.492" cy="5.492" r="5.492" class="icon-login" transform="translate(318.946 279.135)"/>
+    </g>
+</svg>

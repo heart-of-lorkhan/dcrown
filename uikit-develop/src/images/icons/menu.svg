@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="22" viewBox="0 0 23.5 21.5">
+    <defs>
+        <style>
+      .icon-menu { fill: none; stroke: #b2b4b2; stroke-linecap: round; stroke-width: 1.5px; }
+        </style>
+    </defs>
+    <g id="Group_410" transform="translate(-17.25 -70.928)">
+        <path id="Path_674" d="M0 0v22" class="icon-menu" transform="rotate(90 -20.839 60.839)"/>
+        <path id="Path_704" d="M0 0v22" class="icon-menu" transform="rotate(90 -15.839 55.839)"/>
+        <path id="Path_705" d="M0 0v22" class="icon-menu" transform="rotate(90 -25.839 65.839)"/>
+    </g>
+</svg>

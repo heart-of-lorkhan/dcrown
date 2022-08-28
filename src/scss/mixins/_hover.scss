@@ -1,0 +1,7 @@
+@mixin hover {
+    .is-device-mobile &:active,
+    .is-device-tablet &:active,
+    .is-device-desktop &:hover {
+        @content;
+    }
+}

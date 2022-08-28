@@ -1,0 +1,25 @@
+.uk-switcher {
+  display: flex;
+}
+
+.uk-switcher > .uk-active {
+  order: 0;
+  transition-property: opacity;
+  transition-duration: $transition-duration;
+
+  @include tablet {
+    order: 0;
+  }
+}
+
+.uk-switcher > :not(.uk-active) {
+  display: block;
+  opacity: 0.5;
+  order: 1;
+  transition-property: opacity;
+  transition-duration: $transition-duration;
+
+  @include tablet {
+    order: 0;
+  }
+}

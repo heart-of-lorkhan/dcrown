@@ -1,0 +1,32 @@
+.footer {
+  background-color: $secondary-color;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  margin-bottom: 33px;
+  @include tablet {
+    margin-bottom: 53px;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  padding: 33px 0;
+  background-color: $background-red;
+}
+
+.copyright {
+  color: $text-color-white;
+  text-align: center;
+  font-size: 11px;
+  font-family: $font-family;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}

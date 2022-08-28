@@ -1,0 +1,134 @@
+extends pug/base
+
+append vars
+    //- ...
+    - title="Danish Crown"
+
+block content
+  main.main
+    section.career
+      .container
+        .career__inner(data-scrollspy="animate__fadeInUp")
+          h2 Better food. Brighter future
+          ul.career__features
+            li Sustainability
+            li Community
+            li Mentorship
+            li Craftsmanship
+          img.arrow(src="images/arrow-left.svg" alt="arrow icon")
+    section.help-us 
+      .container 
+        .help-us
+          img.help-us__img(src="images/workers.jpg" alt="workers" width="758" height="565" data-uk-parallax="y: -100; media: 1025;")
+          .help-us__text(data-uk-parallax="y: 100; media: 1025")
+            .help-us__inner
+              h2.help-us__title Add flavour to your career
+              span Help us write the next chapter for food and make your career count.
+              .help-us__features
+                .help-us__features-col-left
+                  .col-row-top No experience needed
+                  .col-row-bottom  Great salary
+                .border
+                .help-us__features-col-right
+                  .col-row-top Career progression
+                  .col-row-bottom Training provided
+              img.help-us__arrow(src="images/vertical-arrow-right.svg" alt="arrow icon")
+    section.roles
+      .container
+        h2.title(data-scrollspy="animate__fadeInLeft") Available roles at our Bugle site
+        .roles__inner(data-scrollspy="animate__fadeInUp")
+          ul.roles__buttons(uk-switcher)
+            li
+              a(href="#")
+            li
+              a(href="#")
+          ul.roles__list.uk-switcher
+            li(uk-switcher-item="0")
+              .card
+                img.card__image(src="images/trainee-butcher.jpg", alt="trainee butcher" width="484" height="285")
+                h3.card__title Trainee Butcher
+                p.card__text As a Trainee Butcher , you’ll be learning one of the oldest crafts in the world. Our trainee programme provides an exceptional level of training and support, to give you all the skills, knowledge and behaviours needed for your rewarding career in butchery.
+                h4.card__detail £12-15 per hour + production bonus
+                .card__actions
+                  button.button(data-scrollto="#form" data-role="trainee-butcher") Apply Now
+            li(uk-switcher-item="1")
+              .card
+                img.card__image(src="images/production-operative.jpg", alt="production operative" width="484" height="285")
+                h3.card__title Production Operatives
+                p.card__text Working in the onward processing of pork produce, you could be working in curing, cooking and smoking. Along with your pay, there is ample opportunity to increase your earning with the production bonus scheme, rewarding you for what you bring to the table.
+                h4.card__detail £9.76 per hour + production bonus
+                .card__actions
+                  button.button(data-scrollto="#form" data-role="production-operative") Apply Now
+
+          <div class="roles__slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="center: true">
+            ul.slider-nav
+              li(data-uk-slider-item="0")
+                a(href="#")
+              li(data-uk-slider-item="1")
+                a(href="#") 
+
+            ul.uk-slider-items(data-uk-height-match="target: .card")
+              li
+                .card
+                  img.card__image(src="images/trainee-butcher.jpg", alt="trainee butcher" width="484" height="285")
+                  h3.card__title Trainee Butcher
+                  p.card__text As a Trainee Butcher , you’ll be learning one of the oldest crafts in the world. Our trainee programme provides an exceptional level of training and support, to give you all the skills, knowledge and behaviours needed for your rewarding career in butchery.
+                  h4.card__detail £12-15 per hour + production bonus
+                  .card__actions
+                    button.button(data-scrollto="#form" data-role="trainee-butcher") Apply Now
+              li
+                .card
+                  img.card__image(src="images/production-operative.jpg", alt="production operative" width="484" height="285")
+                  h3.card__title Production Operatives
+                  p.card__text Working in the onward processing of pork produce, you could be working in curing, cooking and smoking. Along with your pay, there is ample opportunity to increase your earning with the production bonus scheme, rewarding you for what you bring to the table.
+                  h4.card__detail £9.76 per hour + production bonus
+                  .card__actions
+                    button.button(data-scrollto="#form" data-role="production-operative") Apply Now
+
+    section.team 
+        .container 
+          .team__inner
+            .team__text(data-uk-parallax="y: 100; media: 1025;")
+              img(src="images/vertical-arrow-left.svg" alt="arrow" width="114" height="123").team__arrow
+              h2.team__title One crown, one team
+              p We believe that the best workplace is diverse, inclusive and treats everyone equally. That is why we go out of our way to make you to feel at home at work. It’s a big step when you need to get started on your first job and career. At Danish Crown, we are proud that we are an attractive and reliable employer for young people entering the labour market, and we care as much about your career as you do yourself. With us you will feel seen and heard, and you will soon feel at home in your team. 
+              button.button.button-apply.button-inverse(data-scrollto="#form") APPLY NOW
+            img.team__img(src="images/team.jpg" alt="team" width="828" height="555" data-uk-parallax="y: -100; media: 1025;")
+    section.section-offers
+      .container
+        .offers
+          .offers__inner 
+            .offers__titles(data-scrollspy="animate__fadeInDown")
+              h2.offers__title Tickle your tastebuds
+              h2.offers__subtitle What we can offer you
+            ul.offers__list(data-scrollspy="animate__fadeInRight")
+              li.offers__list-item
+                .offers__list-icon
+                  <svg class="icon-piggy" width="95" height="95" viewBox="0 0 105 80"><path id="Path_146" d="M2220.378-346.408l-4.14-7.516c-3.5 1.308-5.263 5.7-6.009 8.232.343.456.663.922.966 1.4 3.541-1.597 9.183-2.116 9.183-2.116z" fill="#005151" transform="translate(-2115.293 387.105)"/><circle id="Ellipse_1" cx="12.863" cy="12.863" r="12.863" fill="#005151" transform="translate(44.196)"/><path id="Path_147" d="M2094.182-359.514a74.834 74.834 0 00-25.746 4.419c-2.336-1.92-7.1-4.526-15.13-3.574l-.521.365 4.719 9.029c-6.513 4.713-8.991 8.9-17.552 8.5L2037.733-329s8.959 10.033 23.017 10.033l4.324-7.889h.461l-.489 31.7h7.518l8.139-14.988h19.8l.024-7.232h.3l11.591 12.553.032 9.668h7.672l5.431-16.889s12.188-6.925 10.921-21.662c-1.436-16.715-16.412-25.808-42.292-25.808zm13.473 12.54l-24.062-2.265v-2.835h24.062z" fill="#005151" transform="translate(-2037.733 389.619)"/></svg>
+                span Competitive salary
+              li.offers__list-item
+                .offers__list-icon
+                  img(src="images/icon2.svg" alt="Career progression")
+                span Career progression
+              li.offers__list-item
+                .offers__list-icon
+                  .icon-canteen
+                    <svg class="fork"><path d="M27 .04l2.23 26.26-10.5 8.02c1.05 32.74 1.64 50.93 1.76 54.56.1 3.25-2.44 5.97-5.69 6.08h-.18c-3.25-.01-5.88-2.64-5.87-5.89v-.19c.11-3.44.67-20.65 1.66-51.64h3.63v-.62L.01 26.3 2.24.04h4.3v16.92c0 1.45 1.17 2.63 2.62 2.63 1.41 0 2.56-1.1 2.62-2.51.06-1.13.31-6.81.78-17.04h4.12c.47 10.23.73 15.91.78 17.04a2.62 2.62 0 005.24-.12V.04H27z" fill="#fff"/><use xlink:href="#b"/><use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"/><g><path fill="#005151" d="M27 .04l2.23 26.26-10.5 8.02c1.05 32.74 1.64 50.93 1.76 54.56.1 3.25-2.44 5.97-5.69 6.08h-.18c-3.25-.01-5.88-2.64-5.87-5.89v-.19c.11-3.44.67-20.65 1.66-51.64h3.63v-.62L.01 26.3 2.24.04h4.3v16.92c0 1.45 1.17 2.63 2.62 2.63 1.41 0 2.56-1.1 2.62-2.51.06-1.13.31-6.81.78-17.04h4.12c.47 10.23.73 15.91.78 17.04a2.62 2.62 0 005.24-.12V.04H27z"/></g></svg>
+                    <svg class="knife" preserveAspectRatio="xMidYMid meet"><defs><path d="M16.42 88.87C16.5 92.13 13.92 94.84 10.66 94.92C10.62 94.92 10.57 94.92 10.52 94.92C7.26 94.92 4.62 92.27 4.62 89.01C4.62 88.95 4.63 88.88 4.63 88.82C4.7 86.51 5.07 74.96 5.74 54.16L10.02 54.16L10.02 53.61L0 47.08C2.45 24.34 3.81 11.7 4.08 9.17C4.64 3.96 9.04 0 14.28 0C14.28 0 16.2 79.98 16.42 88.87Z" id="c5I9KwhyWQ"></path></defs><g><g><g><use xlink:href="#c5I9KwhyWQ" opacity="1" fill="#005151" fill-opacity="1"></use><g><use xlink:href="#c5I9KwhyWQ" opacity="1" fill-opacity="0" stroke="#005151" stroke-width="1" stroke-opacity="0"></use></g></g></g></g></svg>
+                span Subsidised canteen
+              li.offers__list-item
+                .offers__list-icon
+                  img(src="images/icon4.svg" alt="Sense of family feel")
+                span Sense of family feel
+              li.offers__list-item
+                .offers__list-icon
+                  img(src="images/icon5.svg" alt="Voucher scheme")
+                span Voucher scheme
+              li.offers__list-item
+                .offers__list-icon
+                  img(src="images/icon6.svg" alt="Cycle to work scheme")
+                span Cycle to work scheme
+            p(data-scrollspy="animate__fadeInUp") If you’re looking to kick start your career with excellent long-term benefits, then don’t hesitate – 
+              b apply now. 
+            img.offers__arrow(src="images/green-arrow-vertical-left.svg" alt="arrow")
+

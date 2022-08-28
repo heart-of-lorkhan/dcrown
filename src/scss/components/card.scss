@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 504px;
+  min-width: 320px;
+  width: 100%;
+  min-height: 652px;
+  padding: 26px 22px 36px 22px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  background-color: $background-default;
+  color: $secondary-color;
+  transition-property: transform;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    cursor: pointer;
+
+    @include tablet {
+      transform: scale(1.03);
+      transition-property: transform;
+      transition-duration: $transition-duration;
+    }
+  }
+
+  @include tablet {
+    padding: 32px 30px 36px 30px;
+  }
+}
+
+.card__actions {
+  margin-top: auto;
+}
+
+.card__detail {
+  font-family: $font-family;
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+.card__image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  font-family: $font-family;
+  font-size: 24px;
+}

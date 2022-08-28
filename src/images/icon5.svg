@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Component_9_2" width="91.587" height="88.465" viewBox="0 0 91.587 88.465">
+    <defs>
+        <style>
+            .cls-1{fill:#005151}
+        </style>
+    </defs>
+    <path id="Path_143" d="M2332.657-133.6h54.243l1.542-2.97-4.654-5.956 2.15-11.593-2.42-1.943a55.083 55.083 0 0 0-23.739 15.072 55.084 55.084 0 0 0-23.739-15.072l-2.42 1.943 2.15 9.942-4.655 7.607z" class="cls-1" transform="translate(-2313.984 156.061)"/>
+    <path id="Path_144" d="M2299.989-95.455h4.927v48.47h30.659v-63.237h-35.587z" class="cls-1" transform="translate(-2299.989 135.451)"/>
+    <path id="Path_145" d="M2401.74-110.223v63.237h30.66v-44.357l-13.942-2.89v-1.222h18.87v-14.768z" class="cls-1" transform="translate(-2345.74 135.451)"/>
+    <path id="Rectangle_92" d="M0 0H14.909V63.237H0z" class="cls-1" transform="translate(38.339 25.228)"/>
+</svg>
